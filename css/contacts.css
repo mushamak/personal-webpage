@@ -1,0 +1,83 @@
+body {
+    background-color: gray;
+}
+
+h3 {
+    color: white;
+    font-size: 40px;
+    text-shadow: 4px 4px 4px #000000;
+    text-align: center;
+}
+
+ol {
+    padding: 0px 0px 0px 0px;
+    margin: 20px;
+    border: 0px;
+}
+a:link {
+    color: black;
+
+}
+
+label {
+    font-size: 18px;
+}
+
+input {
+    width: 350px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 350px;
+    padding: 15px 20px;
+    margin: 8px 0px;
+    display: block;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: white;
+    transition: 0.4px;
+}
+
+textarea:hover {
+    background-color: #c7cfb7;
+}
+
+button {
+    width: 350px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-top: 25px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    transition: 0.03px;
+}
+
+button:hover {
+    background-color: grey;
+    color: black;
+}
+
+form {
+    display: grid;
+    place-content: center;
+}
+
+a i {
+    float: right;
+    padding: 15px 18px;
+    font-size: 25px;
+    color: black;
+    visibility: visible;
+}  

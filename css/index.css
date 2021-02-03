@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+body {
+    background-color: black;
+    margin: 0px;
+}
+
+.container .topnav a {
+    margin-top: 55px;
+    color: blanchedalmond;
+    padding: 15px 18px;
+    border-radius: 35px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 0.5rem;
+}
+
+.topnav a:hover {
+    background-color: black;
+}
+
+h1 {
+    color: blanchedalmond;
+    font-family: 'Cookie', cursive;
+}
+
+h3 {
+    color: blanchedalmond;
+    font-size: 40px;
+    font-family: 'Imbue', serif;
+}
+
+.container {
+    width: 100%;
+    height: 600px;
+}
+
+.container img {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    object-fit: cover;
+}
+
+.middle {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50% -50%);
+    transition: .5s ease;
+    text-align: center;
+}
+
+.container:hover img {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    color: #000;
+    font-size: 18px;
+    padding: 16px 32px;
+}
+
+.card {
+    box-shadow: 0px 0px 2px 0px red;
+    transition: 0.3s;
+    width: 40em;
+    height: 30em;
+    padding: 10px 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+    margin-bottom: 150px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 7px 7px blanchedalmond;
+}
+
+p {
+    color: blanchedalmond;
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Cookie', serif;
+}
+
+footer {
+    color: blanchedalmond;
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: 'Cookie', cursive;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.fa {
+    padding: 4px;
+    font-size: 20px;
+    width: 15px;
+    text-decoration: none;
+    margin: 1px 1px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-github {
+    color: white;
+}
+
+.fa-facebook-square{
+    color: darkblue;
+}
+
+.fa-telegram {
+    color: rgba(23, 120, 242);
+}
+
+h2 {
+    color: blanchedalmond;
+    text-align: left;
+    font-family: 'Imbue', serif;
+    font-size: 25px;
+}
+
+.card section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+i.checked{
+    color: blanchedalmond;
+}
+i.fa fa-star{
+     color: brown;
+}
+.card h2{
+    margin: 0px, 0px, 0px, 0px;
+
+}

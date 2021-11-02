@@ -1,22 +1,117 @@
-body{
+body {
     margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    --big-title-color: #66BFBF;
+    --small-title-color: #11999E;
+    --bg-color: #EAF6F6;
 }
-h1{
-    margin-top: 0;
+
+h1 {
+    font-size: 5.625rem;
+    margin: 50px auto 0 auto;
+    font-weight: normal;
+    font-family: 'Cookie', cursive;
+    color: var(--big-title-color)
 }
-.top-container{
-    background-color: #f8f1f1;   
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    color: var(--big-title-color);
+    font-weight: normal;
 }
-.middle-container{
-    width: 200px;
-    height: 200px;
-    background-color: blanchedalmond;
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--small-title-color);
 }
-.bottom-container{
-    width: 200px;
-    height: 200px;
-    background-color: blueviolet;
+
+.top-container {
+    background-color: var(--bg-color);
+    position: relative;
+    padding-top: 100px;
 }
-.web{
-    text-decoration: underline;
+
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 50px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 200px;
+    bottom: 300px;
+}
+
+.exercising {
+    width: 25%;
+    float: left;
+    margin-right: 40px;
+}
+
+.study-girl {
+    width: 25%;
+    float: right;
+    margin-left: 40px;
+}
+
+hr {
+    border-top: 6px dotted #11999E;
+    width: 4%;
+    color: var(--bg-color);
+    margin: 100px auto;
+}
+.contact-message {
+    width: 40%;
+    margin: 40px auto 60px;
+}
+
+.BUTTON {
+    border-radius: 30px;
+    color: var(--bg-color);
+    padding: 20px;
+    background-color: var(--big-title-color);
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.BUTTON:hover {
+    background: var(--small-title-color);
+}
+
+.middle-container {
+    margin-bottom: 60px;
+}
+
+.bottom-container {
+    background-color: var(--small-title-color);
+    height: 130px;
+    display: grid;
+    place-content: space-evenly;
+}
+
+.bottom-container a {
+    color: var(--big-title-color);
+    padding: 15px;
+    text-decoration: none;
+}
+a:hover {
+    color: var(--bg-color);
+}
+
+.bottom-container p {
+    margin: 0;
+    color:var(--bg-color);
+    font-size: 0.75rem;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
 }

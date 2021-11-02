@@ -146,20 +146,20 @@ h2 {
     font-size: 25px;
 }
 
-.card section{
+.card section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
 }
 
-i.checked{
+i.checked {
     color: blanchedalmond;
 }
 i.fa fa-star{
      color: brown;
 }
-.card h2{
+.card h2 {
     margin: 0px, 0px, 0px, 0px;
 
 }

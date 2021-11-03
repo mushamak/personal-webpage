@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+	<title>Musha Makhmudova Portfolio</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="./css/Musha.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<style>
+		body,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: "Lato", sans-serif;
+		}
+
+		body,
+		html {
+			height: 100%;
+			color: #777;
+			line-height: 1.8;
+		}
+
+		/* Create a Parallax Effect */
+		.bgimg-1,
+		.bgimg-2,
+		.bgimg-3 {
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		/* First image (Logo. Full height) */
+		.bgimg-1 {
+			background-image: url("./images/musha_bridge.jpg");
+			min-height: 100%;
+		}
+
+		/* Second image (Portfolio) */
+		.bgimg-2 {
+			background-image: url("./images/musha_face.jpg");
+			min-height: 400px;
+		}
+
+		/* Third image (Contact) */
+		.bgimg-3 {
+			background-image: url("./images/musha_window.jpg");
+			min-height: 400px;
+		}
+
+		.portfolio-wide {
+			letter-spacing: 10px;
+		}
+
+		.portfolio-hover-opacity {
+			cursor: pointer;
+		}
+
+		.portfolio-xlarge.portfolio-section {
+			display: flex;
+			gap: 1rem;
+			place-content: center;
+		}
+
+		/* Turn off parallax scrolling for tablets and phones */
+		@media only screen and (max-device-width: 1600px) {
+			.bgimg-1,
+			.bgimg-2,
+			.bgimg-3 {
+				background-attachment: scroll;
+				min-height: 400px;
+			}
+		}
+	</style>
+
+	<body>
+		<!-- Navbar (sit on top) -->
+		<div class="portfolio-top">
+			<div class="portfolio-bar" id="myNavbar">
+				<a class="portfolio-bar-item portfolio-button portfolio-hover-black portfolio-hide-medium portfolio-hide-large portfolio-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+					<i class="fa fa-bars"></i>
+				</a>
+				<a href="#home" class="portfolio-bar-item portfolio-button">HOME</a>
+				<a href="#about" class="portfolio-bar-item portfolio-button portfolio-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+				<a href="#portfolio" class="portfolio-bar-item portfolio-button portfolio-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+				<a href="#contact" class="portfolio-bar-item portfolio-button portfolio-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+				<a href="./practice.html" class="portfolio-bar-item portfolio-button portfolio-hide-small"><i class="fa fa-book"></i> SECOND PAGE</a>
+				<a href="#" class="portfolio-bar-item portfolio-button portfolio-hide-small portfolio-right portfolio-hover-red">
+					<i class="fa fa-search"></i>
+				</a>
+			</div>
+
+			<!-- Navbar on small screens -->
+			<div id="navDemo" class="portfolio-bar-block portfolio-white portfolio-hide portfolio-hide-large portfolio-hide-medium">
+				<a href="#about" class="portfolio-bar-item portfolio-button" onclick="toggleFunction()">ABOUT</a>
+				<a href="#portfolio" class="portfolio-bar-item portfolio-button" onclick="toggleFunction()">PORTFOLIO</a>
+				<a href="#contact" class="portfolio-bar-item portfolio-button" onclick="toggleFunction()">CONTACT</a>
+				<a href="#" class="portfolio-bar-item portfolio-button">SEARCH</a>
+			</div>
+		</div>
+
+		<!-- First Parallax Image with Logo Text -->
+		<div class="bgimg-1 portfolio-display-container portfolio-opacity-min" id="home">
+			<div class="portfolio-display-middle" style="white-space: nowrap">
+				<span class="portfolio-center portfolio-padding-large portfolio-black portfolio-xlarge portfolio-wide portfolio-animate-opacity">My Portfolio</span>
+			</div>
+		</div>
+
+		<!-- Container (About Section) -->
+		<div class="portfolio-content portfolio-container portfolio-padding-64" id="about">
+			<h3 class="portfolio-center">ABOUT ME</h3>
+			<p class="portfolio-center"><em>I love coding</em></p>
+			<p>
+				Hello, I am Musha. I want to be a web developer who can create a lot of beautiful designs that suit your needs.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+				magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+				pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			</p>
+			<div class="portfolio-row">
+				<div class="portfolio-col m6 portfolio-center portfolio-padding-large">
+					<p>
+						<b><i class="fa fa-user portfolio-margin-right"></i>Musha Makhmudova</b>
+					</p>
+					<br />
+					<img src="./images/musha_echki.jpg" class="portfolio-round portfolio-image portfolio-opacity portfolio-hover-opacity-off" alt="Photo of Me" width="500" height="333" />
+				</div>
+
+				<!-- Hide this text on small devices -->
+				<div class="portfolio-col m6 portfolio-hide-small portfolio-padding-large">
+					<p>
+						Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+						ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+						officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+						nisi ut aliquip ex ea commodo consequat.
+					</p>
+				</div>
+			</div>
+			<p class="portfolio-large portfolio-center portfolio-padding-16">I'm really good at:</p>
+			<p class="portfolio-wide"><i class="fa fa-code"></i>HTML/CSS</p>
+			<div class="portfolio-light-grey">
+				<div class="portfolio-container portfolio-padding-small portfolio-dark-grey portfolio-center" style="width: 90%">90%</div>
+			</div>
+			<p class="portfolio-wide"><i class="fa fa-laptop"></i>Web Design (Adobe XD)</p>
+			<div class="portfolio-light-grey">
+				<div class="portfolio-container portfolio-padding-small portfolio-dark-grey portfolio-center" style="width: 85%">85%</div>
+			</div>
+			<p class="portfolio-wide"><i class="fa fa-cutlery"></i>Cooking</p>
+			<div class="portfolio-light-grey">
+				<div class="portfolio-container portfolio-padding-small portfolio-dark-grey portfolio-center" style="width: 75%">75%</div>
+			</div>
+		</div>
+
+		<!-- <div class="portfolio-row portfolio-center portfolio-dark-grey portfolio-padding-16">
+        <div class="portfolio-quarter portfolio-section">
+            <span class="portfolio-xlarge">14+</span><br>
+            Partners
+        </div>
+        <div class="portfolio-quarter portfolio-section">
+            <span class="portfolio-xlarge">55+</span><br>
+            Projects Done
+        </div>
+        <div class="portfolio-quarter portfolio-section">
+            <span class="portfolio-xlarge">89+</span><br>
+            Happy Clients
+        </div>
+        <div class="portfolio-quarter portfolio-section">
+            <span class="portfolio-xlarge">150+</span><br>
+            Meetings
+        </div>
+    </div> -->
+
+		<!-- Second Parallax Image with Portfolio Text -->
+		<div class="bgimg-2 portfolio-display-container portfolio-opacity-min">
+			<div class="portfolio-display-middle">
+				<!-- <span class="portfolio-xxlarge portfolio-text-white portfolio-wide">MY WORK</span> -->
+			</div>
+		</div>
+
+		<!-- Container (Portfolio Section) -->
+		<div class="portfolio-content portfolio-container portfolio-padding-64" id="portfolio">
+			<h3 class="portfolio-center">MY WORK</h3>
+			<p class="portfolio-center">
+				<em
+					>Here are some of my latest projects.<br />
+					Click on them to go the full demo page.</em
+				>
+			</p>
+			<br />
+
+			<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+			<div class="portfolio-row-padding portfolio-center">
+				<div class="portfolio-col m3">
+					<a href="https://mushamak.github.io/Travel-website/" target="_blank">
+						<img src="./images/work/travelWeb.png" style="width: 100%" class="portfolio-hover-opacity" alt="Travel Website" />
+					</a>
+				</div>
+
+				<div class="portfolio-col m3">
+					<a href="https://mushamak.github.io/fuzzy-fiesta/" target="_blank">
+						<img src="./images/work/fuzzyFiesta.png" style="width: 100%" class="portfolio-hover-opacity" alt="Fuzzy Fiesta" />
+					</a>
+				</div>
+
+				<div class="portfolio-col m3">
+					<a href="https://mushamak.github.io/my-tribute-page/" target="_blank">
+						<img src="./images/work/tribute.png" style="width: 100%" class="portfolio-hover-opacity" alt="Tribute Page" />
+					</a>
+				</div>
+
+				<div class="portfolio-col m3">
+					<a href="https://mushamak.github.io/responsiveCardComp/" target="_blank">
+						<img src="./images/work/respCard.png" style="width: 100%" class="portfolio-hover-opacity" alt="Responsive Cards" />
+					</a>
+				</div>
+			</div>
+
+			<div class="portfolio-row-padding portfolio-center portfolio-section">
+				<div class="portfolio-col m3">
+					<a href="https://mushamak.github.io/social-proof-section/" target="_blank">
+						<img src="./images/work/socialProof.png" style="width: 100%" class="portfolio-hover-opacity" alt="Social Testimonials" />
+					</a>
+				</div>
+
+				<!-- <div class="portfolio-col m3">
+                <a href="">
+
+                    <img src="./images/work/cardPage.png" style="width:100%" class="portfolio-hover-opacity"
+                    alt="My beloved typewriter">
+                </a>
+            </div> -->
+
+				<div class="portfolio-col m3">
+					<a href="https://mushamak.github.io/FAQ-accordion-card/" target="_blank">
+						<img src="./images/work/faqAccordion.png" style="width: 100%" class="portfolio-hover-opacity" alt="FAQ Accordion Practice" />
+					</a>
+				</div>
+
+				<div class="portfolio-col m3">
+					<a href="https://mushamak.github.io/order_component/" target="_blank">
+						<img src="./images/work/orderSummary.png" style="width: 100%" class="portfolio-hover-opacity" alt="Order Summary Card" />
+					</a>
+				</div>
+				<div class="portfolio-col m3">
+					<a href="https://mushamak.github.io/Testimonials-grid-card/" target="_blank">
+						<img src="./images/work/gridCards.png" style="width: 100%" class="portfolio-hover-opacity" alt="Grid Practice Testimonials" />
+					</a>
+				</div>
+				<!-- <button class="portfolio-button portfolio-padding-large portfolio-light-grey" style="margin-top:64px">LOAD MORE</button> -->
+			</div>
+		</div>
+
+		<!-- Modal for full size images on click-->
+		<div id="modal01" class="portfolio-modal portfolio-black" onclick="this.style.display='none'">
+			<span class="portfolio-button portfolio-large portfolio-black portfolio-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+			<div class="portfolio-modal-content portfolio-animate-zoom portfolio-center portfolio-transparent portfolio-padding-64">
+				<img id="img01" class="portfolio-image" />
+				<p id="caption" class="portfolio-opacity portfolio-large"></p>
+			</div>
+		</div>
+
+		<!-- Third Parallax Image with Portfolio Text -->
+		<div class="bgimg-3 portfolio-display-container portfolio-opacity-min">
+			<div class="portfolio-display-middle">
+				<span class="portfolio-xxlarge portfolio-text-white portfolio-wide">CONTACT</span>
+			</div>
+		</div>
+
+		<!-- Container (Contact Section) -->
+		<div class="portfolio-content portfolio-container portfolio-padding-64" id="contact">
+			<h3 class="portfolio-center">WHERE I WORK</h3>
+			<p class="portfolio-center"><em>I'd love your feedback!</em></p>
+
+			<div class="portfolio-row portfolio-padding-32 portfolio-section">
+				<div class="portfolio-col m4 portfolio-container">
+					<img src="./images/work2.jpg" class="portfolio-image portfolio-round" style="width: 100%" />
+				</div>
+				<div class="portfolio-col m8 portfolio-panel">
+					<div class="portfolio-large portfolio-margin-bottom">
+						<i class="fa fa-map-marker fa-fw portfolio-hover-text-black portfolio-xlarge portfolio-margin-right"></i> Shizuoka, Japan<br />
+						<i class="fa fa-phone fa-fw portfolio-hover-text-black portfolio-xlarge portfolio-margin-right"></i> Phone: +81 70 3833 1513<br />
+						<i class="fa fa-envelope fa-fw portfolio-hover-text-black portfolio-xlarge portfolio-margin-right"></i> Email: musharrafmakhmudova@gmail.com<br />
+					</div>
+					<p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+					<form action="/action_page.php" target="_blank">
+						<div class="portfolio-row-padding" style="margin: 0 -16px 8px -16px">
+							<div class="portfolio-half">
+								<input class="portfolio-input portfolio-border" type="text" placeholder="Name" required name="Name" />
+							</div>
+							<div class="portfolio-half">
+								<input class="portfolio-input portfolio-border" type="text" placeholder="Email" required name="Email" />
+							</div>
+						</div>
+						<input class="portfolio-input portfolio-border" type="text" placeholder="Message" required name="Message" />
+						<button class="portfolio-button portfolio-black portfolio-right portfolio-section" type="submit"><i class="fa fa-paper-plane"></i> &nbsp;SEND MESSAGE</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="portfolio-center portfolio-black portfolio-padding-64 portfolio-opacity portfolio-hover-opacity-off">
+			<a href="#home" class="portfolio-button portfolio-light-grey"><i class="fa fa-arrow-up portfolio-margin-right"></i>To the top</a>
+			<div class="portfolio-xlarge portfolio-section">
+				<a href="https://facebook.com/merry.macey" target="_blank" rel="noopener noreferrer">
+					<i class="fa fa-facebook-official portfolio-hover-opacity"></i>
+				</a>
+				<a href="https://github.com/mushamak" target="_blank" rel="noopener noreferrer">
+					<i class="fa fa-github portfolio-hover-opacity"></i>
+				</a>
+				<a href="" target="_blank" rel="noopener noreferrer">
+					<i class="fa fa-linkedin portfolio-hover-opacity"></i>
+				</a>
+			</div>
+			<!-- <p>Powered by <a href="https://www.portfolioschools.com/portfoliocss/default.asp" title="portfolio.CSS" target="_blank"
+                class="portfolio-hover-text-green">portfolio.css</a></p> -->
+		</footer>
+
+		<script>
+			// Modal Image Gallery
+			// function onClick(element) {
+			// 	document.getElementById("img01").src = element.src;
+			// 	document.getElementById("modal01").style.display = "block";
+			// 	var captionText = document.getElementById("caption");
+			// 	captionText.innerHTML = element.alt;
+			// }
+
+			// Change style of navbar on scroll
+			window.onscroll = function () {
+				myFunction();
+			};
+			function myFunction() {
+				var navbar = document.getElementById("myNavbar");
+				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+					navbar.className = "portfolio-bar" + " portfolio-card" + " portfolio-animate-top" + " portfolio-white";
+				} else {
+					navbar.className = navbar.className.replace(" portfolio-card portfolio-animate-top portfolio-white", "");
+				}
+			}
+
+			// Used to toggle the menu on small screens when clicking on the menu button
+			function toggleFunction() {
+				var x = document.getElementById("navDemo");
+				if (x.className.indexOf("portfolio-show") == -1) {
+					x.className += " portfolio-show";
+				} else {
+					x.className = x.className.replace(" portfolio-show", "");
+				}
+			}
+		</script>
+	</body>
+</html>
